@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.parallax {
+    min-height: 100vh;
+    background: linear-gradient(#fff, rgb(230, 216, 137));
+    position: relative;
+    overflow: hidden;
+}
+
+
+.front-layer,
+.back-layer {
+    position: absolute;
+    top: 8;
+    left: 8;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    text-align: center;
+}
+
+.front-layer {
+    z-index: 1;
+}
+
+.back-layer {
+    z-index: 0;
+}
+
+
+
+.front-layer img {
+    right: auto;
+    left: auto;
+    width: 100%;
+}
+
+.back-layer img {
+    left: auto;
+   
+    width: 100%;
+}
+
+
+
+
+/*.front-layer img {
+    max-width: 500px;
+}
+
+.back-layer img {
+    max-width: 300px;
+}
